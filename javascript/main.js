@@ -14,8 +14,9 @@
   document.addEventListener("DOMContentLoaded", function () {
     const intro = document.querySelector(".intro-section");
     const images = [
-      "staticimages/installationbg.jpg",
-      "staticimages/installationbg1.jpeg",
+      "staticimages/welding.jpg",
+      "staticimages/metalcutting.jpg",
+      "staticimages/metalbending.jpg",
     ];
 
     let i = 0;
