@@ -29,7 +29,17 @@ body {
 }
 
 
-
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-margin-top: 60px; /* offset for fixed navbar */
+}
 
 
 
@@ -114,7 +124,7 @@ body {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.507); /* dark overlay */
+    background: rgba(0, 0, 0, 0.596); /* dark overlay */
     z-index: 0;
 }
 
@@ -144,31 +154,6 @@ body {
 
 
 
-.about-section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    padding-bottom: 20px;
-    background-color: #47DBFF;
-}
-.about-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-.about-section p {
-    font-size: 1.0em;
-    line-height: 1.4;
-    color: #333;
-    max-width: 800px;
-    text-align: justify;
-    padding: 0 20px;
-}
-
 
 
 
@@ -190,10 +175,9 @@ body {
 .services-section h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: white;
+    color: tomato;
     width: 100%;
     text-align: center;
-    background-color: #47DBFF;
 }
 .services {
     display: flex;
@@ -224,7 +208,8 @@ body {
 .service h3 {
     font-size: 1.0em;
     margin-bottom: 10px;
-    color: #47DBFF;
+    color: tomato;
+    width: 100%;
 }
 .service p {
     font-size: 0.9em;
@@ -236,7 +221,7 @@ body {
     font-size: 1.0em;
     line-height: 1.4;
     color: #333;
-    max-width: 800px;
+    max-width: 80%;
     text-align: justify;
     padding: 0 20px;
 }
@@ -265,10 +250,10 @@ body {
 .projects-section h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: tomato;
-    width: 100%;
+    color: white;
     text-align: center;
-    background-color: white;
+    padding: 6px;
+    border-radius: 5px;
 }
 .projects {
     display: flex;
@@ -311,6 +296,35 @@ body {
 
 
 
+.about-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.about-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+}
+.about-section p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    color: #333;
+    max-width: 80%;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+
+
+
+
 .location-section {
     text-align: justufy;
     display: flex;
@@ -318,7 +332,6 @@ body {
     align-items: center;
     max-width: 100%;
     padding-bottom: 20px;
-    background-color: #47DBFF;
 }
 .location-section h2 {
     font-size: 1.5em;
@@ -332,7 +345,7 @@ body {
     font-size: 1.0em;   
     line-height: 1.4;
     color: #333;
-    max-width: 800px;
+    max-width: 80%;
     text-align: justify;
     padding: 0 20px;
 }
@@ -348,7 +361,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     max-width: 100%;
     padding-bottom: 20px;
     margin-top: 12px;
@@ -365,15 +378,17 @@ body {
     font-size: 1.0em;   
     line-height: 1.4;
     color: #333;
-    max-width: 800px;
+    max-width: 80%;
     text-align: justify;
     padding: 0 20px;
 }
 .divider {
     margin-bottom: 20px;
     padding: 0 20px;
-    border-left: 4px solid #47DBFF;
     padding-left: 10px;
+    border:solid 1px #ccc;
+    border-left: 4px solid #47DBFF;
+
 }
 .divider h3 {
     margin-top: 0;
@@ -388,22 +403,30 @@ body {
 
 
 .contact-section {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
     padding-bottom: 20px;
     background-color: tomato;
-    color: white;
+    
 }
 .contact-section h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: tomato;
+    color: white;
     width: 100%;
     text-align: center;
-    background-color: white;
+}
+.contact-section p{
+    color: white;
+    padding: 12px;
+    font-size: 1.0em;
+    margin: 5px 0;
+    text-align: justify;
+    max-width: 80%;
+
+    
 }
 .contact-section form {
     display: flex;
@@ -429,6 +452,44 @@ body {
 }
 .contact-section button:hover {
     background-color: #3399cc;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: white;
+    padding: 12px;
+    align-items: center;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-details {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.contact-details p {
+    margin: 5px 0;
+}
+.contact-details a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+.contact-details a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 
@@ -546,17 +607,26 @@ body {
 .core-business-section {
     flex-direction: row;
 }
+.divider {
+    border: none;
+    border-left:solid 4px #47DBFF;
+
+}
 
 
   /* Contact form wider */
   .contact-section form {
-    width: 500px;
+    width: 80%;
   }
 
   /* Footer links inline */
   .footer-links {
     justify-content: center;
     gap: 40px;
+  }
+  .contact-details {
+    flex-direction: row;
+    font-size: 1.5em;
   }
 }
 
