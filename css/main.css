@@ -132,9 +132,42 @@ body {
     animation: fadeIn 1.5s ease-in-out;
     color: #47DBFF;
 }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 
 
+
+
+
+
+
+.about-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+    background-color: #47DBFF;
+}
+.about-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.about-section p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    color: #333;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
+}
 
 
 
@@ -152,6 +185,7 @@ body {
     background-color: none;
     padding-bottom: 20px;
     position: relative;
+    background-color: white;
 }
 .services-section h2 {
     font-size: 1.5em;
@@ -168,6 +202,7 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .service {
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.452);
@@ -181,7 +216,7 @@ body {
 }
 .service-image {
     width: 100%;
-    max-height: 50%;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -195,7 +230,20 @@ body {
     font-size: 0.9em;
     line-height: 1.4;
     color: #555;
+    text-align: left;
 }
+.services-section p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    color: #333;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+
+
 
 
 
@@ -217,10 +265,10 @@ body {
 .projects-section h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: white;
+    color: tomato;
     width: 100%;
     text-align: center;
-    background-color: tomato;
+    background-color: white;
 }
 .projects {
     display: flex;
@@ -263,139 +311,162 @@ body {
 
 
 
-
-
-
-.contact-section {
-    text-align: center;
-    justify-content: center;
+.location-section {
+    text-align: justufy;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin-bottom: 50px;
     padding-bottom: 20px;
+    background-color: #47DBFF;
 }
-
-.contact-section h2 {
-    font-size: 1.2em;
+.location-section h2 {
+    font-size: 1.5em;
     margin-bottom: 20px;
-    color: white;
+    color: tomato;
     width: 100%;
     text-align: center;
-    background-color: tomato;
+    background-color: white;
 }
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 300px;
+.location-section p {
+    font-size: 1.0em;   
+    line-height: 1.4;
+    color: #333;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
 }
-.contact-section input, .contact-section textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+.location-highlight {
+    font-weight: bold;
+    color: black;
 }
 
-.contact-section button {
-    padding: 10px;
-    background-color: tomato;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+
+.core-business-section {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+    margin-top: 12px;
 }
-.contact-section button:hover {
-    background-color: #e04e3d;
+.core-business-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.core-business-section p {
+    font-size: 1.0em;   
+    line-height: 1.4;
+    color: #333;
+    max-width: 800px;
+    text-align: justify;
+    padding: 0 20px;
+}
+.divider {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-left: 4px solid #47DBFF;
+    padding-left: 10px;
+}
+.divider h3 {
+    margin-top: 0;
+    color: tomato;
+}
+.divider p {
+    margin: 10px 0 0 0;
 }   
 
 
 
 
 
-
-
-
-
-
-
-
-footer {
-    margin-top: 100px;
-    background-color:#333;
+.contact-section {
     text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #eee;
-    padding: 40px;
-    font-size: 14px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 20px;
+    background-color: tomato;
+    color: white;
+}
+.contact-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
 }
 
+.contact-section button {
+    padding: 10px;
+    background-color: #47DBFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.contact-section button:hover {
+    background-color: #3399cc;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
 .footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
-
 .footer-links a {
-  color: #ccc;
-  text-decoration: none;
-
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    transition: color 0.3s ease;
 }
-
 .footer-links a:hover {
-  color: #fff;
+    color: tomato;
+    text-decoration: underline;
 }
-
-.newsletter input {
-  padding: 8px;
-  width: 200px;
-  border: none;
-  border-radius: 4px;
+.footer p {
+    font-size: 0.9em;
+    margin: 0;
 }
-
-.newsletter button {
-  padding: 8px 12px;
-  background: #555;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.back-to-top {
-  display: block;
-  margin-top: 20px;
-  color: #999;
-  text-decoration: none;
-}
-
-.back-to-top:hover {
-  color: white;
-}
-
-
-
-
-
-
-
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(100px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 
 
 
@@ -449,7 +520,7 @@ footer {
   }
 
   .intro-section p {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 
   /* Services in rows of 3 */
@@ -472,6 +543,11 @@ footer {
     width: 280px;
   }
 
+.core-business-section {
+    flex-direction: row;
+}
+
+
   /* Contact form wider */
   .contact-section form {
     width: 500px;
@@ -493,7 +569,7 @@ footer {
   }
 
   .intro-section p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .service, .project {
