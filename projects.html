@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <!-- link to the JavaScript file -->
+    <script defer src="javascript/main.js"></script>
+    <script defer src="javascript/tabs.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=La+Belle+Aurore&family=Mynerve&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+        
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="staticimages/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="staticimages/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="staticimages/logo.png">
+
+    
+</head>
+
+<body>
+    <header>
+        <img id="logo" src ="staticimages/logo.png" alt="Logo" class="logo">
+        <button id="navToggle" class="menu-btn">☰</button>
+        <nav id="sideNav" class="side-nav">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#services">OUR SERVICES</a>
+                <a href="#projects">OUR PROJECTS</a>
+                <a href="#contact">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <section id="projects" class="projects">
+            <h2>Our Projects</h2>
+            <div class="project">
+                <img src="staticimages/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <img src="staticimages/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project">
+                <img src="staticimages/project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 North Edge Fabricators Limited. All rights reserved.</p>
+        <p>Designed by Deni</p>
+        <div class="social-media">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const logo = document.getElementById("logo");
+            if (window.scrollY > 50) {
+            logo.classList.add("hidden");
+            } else {
+            logo.classList.remove("hidden");
+            }
+        });
+    </script>
+</body>
+</html>
