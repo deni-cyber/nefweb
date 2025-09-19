@@ -322,7 +322,7 @@ section{
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
     padding: 15px;
-    width: 400px;
+    width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -396,7 +396,7 @@ section{
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
     padding: 15px;
-    width: 400px;
+    width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -482,7 +482,7 @@ section{
     padding-left: 10px;
     border:solid 1px #ccc;
     border-left: 4px solid tomato;
-    max-width: 400px;
+    max-width: 100%;
 }
 .divider h3 {
     margin-top: 0;
