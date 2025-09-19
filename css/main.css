@@ -472,6 +472,10 @@ section{
     text-align: justify;
     padding: 0 20px;
 }
+.choose-us-image{
+    width: 100%;
+    border-radius: 3px;
+}
 .divider {
     margin-bottom: 20px;
     padding: 0 20px;
