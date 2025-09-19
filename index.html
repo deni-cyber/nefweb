@@ -24,30 +24,82 @@
     <link rel="icon" type="image/png" sizes="32x32" href="staticimages/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="staticimages/logo.png">
 
+    <script>
+        
+        window.addEventListener("scroll", function () {
+            const logo = document.getElementById("logo");
+            if (window.scrollY > 50) {
+            logo.classList.add("hidden");
+            } else {
+            logo.classList.remove("hidden");
+            }
+        });
+    </script>
     
 </head>
 
 <body>
     <header>
         <img id="logo" src ="staticimages/logo.png" alt="Logo" class="logo">
-        <button id="navToggle" class="menu-btn">☰</button>
+        <button id="navToggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>        
         <nav id="sideNav" class="side-nav">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT US</a>
-                <a href="#services">OUR SERVICES</a>
-                <a href="#projects">OUR PROJECTS</a>
-                <a href="#contact">CONTACT US</a>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#services">OUR SERVICES</a>
+            <a href="#projects">OUR PROJECTS</a>
+            <a href="#contact">CONTACT US</a>
+            <b class="phone"> +254 721-394-475</b>
+            <b class="phone"> +254 723-853-275</b>
         </nav>
     </header>
     <main>
         <!-- introduction section -->
         <section class="intro-section" id ="home">
             <div class="intro-content">
-                <h1>We Are Experts In Metal Fabrication And Fabrication Solutions</h1>
+                <h1>We Are Experts In Fabrication And Engineering Solutions</h1>
                 <p>Welcome to <b style="color: tomato;">North Edge Fabricators Ltd</b>. We Offer you Professional Services in every build.</p>
+                <a href="#contact" class="call-to-action">Request a Quotation</a>
             </div>
         </section>
 
+        
+        <!--about section-->
+        <section class="about-section" id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        North Edge Fabricators Limited is a dynamic and reliable company specializing in quality metal fabrication
+                        and engineering solutions. Strategically <u><b>located at Kariobangi Light Industries, Nairobi,</b></u> we are committed to
+                        delivering durable, efficient, and innovative products that meet the diverse needs of our clients across
+                        different industries.
+                    </p>
+                    <div class="core-business-container">
+                        <h3>Our Core Business</h3>
+                        <p>
+                        At North Edge Fabricators Limited, we specialize in a wide range of metal fabrication and engineering
+                        solutions tailored to meet the needs of individuals, companies, and institutions.
+
+                        Our core areas include:<br>
+                        <i style="color: tomato; font-weight: bold;">
+                        • Custom Metal Fabrication Works<br>
+                        • Street Lighting Poles Fabrication and Installation<br>
+                        • Doors and Window Frames Fabrication<br>
+                        • Water Tanks and Towers Fabrication<br>
+                        • High Masts Fabrication and Installation<br>
+                        </i>
+                        </p>
+                    </div>
+                </div>
+                <img src="staticimages/pole.jpg" alt="About Us Image" class="about-image">
+            </div>
+            
+            <a href="#about" class="learn-more-btn">Learn More About Us ></a>
+        </section>
 
 
         <!-- services section -->
@@ -59,24 +111,12 @@
             <div class="services" id="services">
 
                 <div class="service">
-                    <img src="staticimages/pole.jpg" alt="Welding Service" class="service-image">
+                    <img src="staticimages/pole2.jpg" alt="Welding Service" class="service-image">
                     <h3>Street Lighting Poles</h3>
                     <p>
                         Manufacturing of high-quality, durable steel lighting poles
                         <br> Custom pole designs for highways, estates, and public spaces
                         <br> Installation and maintenance services
-                    </p>
-                </div>
-                
-                <div class="service">
-                    <img src="staticimages/door.jpg" alt="Metal Bending Service" class="service-image">
-                    <h3>Doors, Windows and Security Solutions</h3>
-                    <p>
-                        Fabrication of reinforced steel doors for commercial and residential use
-                        <br> Security doors, fireproof doors, and custom-designed entry systems
-                        <br> Manufacture of modern, durable, and stylish metal windows
-                        <br> Security-enhanced designs with grills and reinforcements
-                        <br> Customized to fit architectural and client specifications
                     </p>
                 </div>
                 <div class="service">
@@ -89,132 +129,57 @@
                     </p>
                 </div>
                 <div class="service">
-                    <img src="staticimages/workshopshed.jpg" alt="Metal Bending Service" class="service-image">
-                    <h3>Workshops and Sheds</h3>
+                    <img src="staticimages/door2.jpg" alt="Metal Bending Service" class="service-image">
+                    <h3>Doors, Windows and Security Solutions</h3>
                     <p>
-                        Design and construction of metal workshops and storage sheds
-                        <br> Customizable sizes and layouts to meet client needs
-                        <br> Durable materials for long-lasting structures
-                    </p>
-                </div>
-
-                <div class="service">
-                    <img src="staticimages/meintenance.jpg" alt="Metal Bending Service" class="service-image">
-                    <h3>General Repairs and Maintenance</h3>
-                    <p>
-                        Comprehensive repair services for metal structures and equipment
-                        <br> On-site maintenance and emergency repair solutions
-                        <br> Skilled technicians ensuring quality workmanship
-                    </p>
-
-                </div>
-                <div class="service">
-                    <img src="staticimages/machinery.jpg" alt="Metal Bending Service" class="service-image">
-                    <h3>Construction Machinery & Equipment</h3>
-                    <p>
-                        Supply of heavy-duty construction machines and tools
-                        <br> Fabrication of components and parts for construction projects
-                        <br> Maintenance and repair services for construction equipment
+                        <br>Fabrication of reinforced steel doors for commercial and residential use
+                        <br> Manufacture of modern, durable, and stylish metal windows
+                        <br> Customized to fit architectural and client specifications
                     </p>
                 </div>
             </div>
             
         </section>
 
-        <!-- projects section -->
+
+        <!-- projects portfolio -->
         <section class="projects-section" id="projects">
             <h2> Recent projects</h2>
+            <div class="projects-intro">
+                <p>Here are some of our recent projects showcasing our expertise in metal fabrication and engineering solutions.</p>
+            </div>
             <div class="projects">
+                
                 <div class="project">
-                    <img src="projects/mast.jpg" alt="Project 1" class="project-image">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
+                    <img src="projects/skipbin.jpeg" alt="Project 3" class="project-image">
+                    <h3>Skip Bin</h3>
+                    <p>A project commisioned by Kajiado Town Municipality</p>
                 </div>
                 <div class="project">
-                    <img src="projects/watertower.jpg" alt="Project 2" class="project-image">
+                    <img src="projects/mast.jpg" alt="Project 1" class="project-image">
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
                 </div>
                 <div class="project">
-                    <img src="projects/workshop1.jpg" alt="Project 3" class="project-image">
+                    <img src="projects/watertower.jpg" alt="Project 2" class="project-image">
                     <h3>Project 3</h3>
                     <p>Description of Project 3.</p>
                 </div>
+
             </div>
 
             <a href="#projects" class="view-all-btn">View All Projects ></a>
         </section>
 
-        
 
-        <!--about section-->
-        <section class="about-section" id="about">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        North Edge Fabricators Limited is a dynamic and reliable company specializing in quality metal fabrication
-                        and engineering solutions. Strategically located at Kariobangi Light Industries, Nairobi, we are committed to
-                        delivering durable, efficient, and innovative products that meet the diverse needs of our clients across
-                        different industries.
-                    </p>
-                    <div class="core-business-container">
-                        <h3>Core Business</h3>
-                        <p>
-                        At North Edge Fabricators Limited, we specialize in a wide range of metal fabrication and engineering
-                        solutions tailored to meet the needs of individuals, companies, and institutions.
-
-                        Our core areas include:
-                        <br>
-                        • Metal Fabrication Works<br>
-                        • Street Lighting Poles<br>
-                        • Security and Commercial Doors<br>
-                        • Windows and Frames<br>
-                        • Milling Machines<br>
-                        • Construction Machinery and Equipment<br>
-                        • Water Tanks and Towers<br>
-                        • Workshops and Sheds<br>
-                        • General Repairs and Maintenance
-                        </p>
-                    </div>
-                </div>
-                <img src="staticimages/pole.jpg" alt="About Us Image" class="about-image">
-            </div>
-            
-            <a href="#about" class="learn-more-btn">Learn More About Us ></a>
-        </section>
-
-        <!-- location and core business -->
-        <section class="location-section">
-            <h2>Our Location</h2>
-            <p>
-                North Edge Fabricators Limited is strategically located at <span class="location-highlight">Kariobangi Light Industries, Off Outering
-                Road, Nairobi, Kenya.</span>
-                We are situated within Nairobi's industrial hub, making us easily accessible to both local and international clients.
-            </p>
-            <p>
-                <span class="location-highlight">Our location offers:</span><br>
-                • Easy access to Nairobi Central Business District (CBD) and neighbouring industrial areas.<br>
-                • Convenient connections for deliveries and logistics across Kenya and the East African region.
-            </p>
-            <p>
-                With a team of skilled professionals, modern equipment, and a dedication to customer satisfaction, we pride
-                ourselves on providing tailor-made solutions that guarantee durability, efficiency, and value for money.
-            </p>
-        </section>
-
-
-
-
-
-        <!-- core business and commitment to quality -->
+        <!-- why choose us -->
+        <section class="choose-us-section">
          <h2>Why Choose Us</h2>
-        <section class="core-business-section">
 
             <div class="divider">
                 <h3>Commitment to Quality</h3>
                 <p>
-                Quality is at the heart of everything we do at North Edge Fabricators Limited. We are committed to
+                We are committed to
                 delivering products and services that meet the highest standards of excellence. Our quality assurance measures
                 include:
                 <br>
@@ -239,32 +204,51 @@
         </section>
 
 
-
+        <!--testimonials-->
+        <section class="testimonials-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"North Edge Fabricators Limited exceeded our expectations with their professionalism and quality workmanship. Our new water tower is not only functional but also aesthetically pleasing."</p>
+                    <h4> Solomon Ouma</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The team at North Edge Fabricators Limited was fantastic to work with. They delivered our custom lighting poles on time and within budget. Highly recommend their services!"</p>
+                    <h4> Reflesh Water & co</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"We are extremely satisfied with the security doors fabricated by North Edge Fabricators Limited. The quality and durability are top-notch. Excellent customer service throughout the process."</p>
+                    <h4>- James .N Mweni</h4>
+                </div>
+            </div>
+        </section>
 
 
         <!-- contact section -->
         <section class="contact-section" id="contact">
-            <h2>Contact Us</h2>
-            <p>
-                We invite you to experience the North Edge Fabricators Limited difference. Whether you have a specific
-                project in mind or need expert advice on metal fabrication solutions, our team is ready to assist you.
-                Contact us today to discuss your requirements and discover how we can help bring your vision to life with
-                quality craftsmanship and exceptional service.
-            </p>
+            <h2>Get in Touch</h2>
+            
             <div class="contact-details">
-                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <div class="contact-form-section">
+                    <p>
+                    We invite you to experience the North Edge Fabricators Limited difference. Whether you have a specific
+                    project in mind or need expert advice on metal fabrication solutions, our team is ready to assist you.
+                    Contact us today to discuss your requirements and discover how we can help bring your vision to life with
+                    quality craftsmanship and exceptional service.
+                    </p>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send via WhatsApp</button>
+                    </form>
+                                        </div>
                 <div class="contact-info">
                     <p>Phone: +254 721394475</p>
                     <p>Email: <a href="mailto:northedgefabricatorsltd@gmail.com">northedgefabricatorsltd@gmail.com</a></p>
                     <p>
                         Kariobangi Light Industries,
                         Off Outering Road
-                        P.O.Box 60870-00100.
                     </p>
                     <p>Address: P.O Box 12345-00100, Nairobi, Kenya</p>
                 </div>
@@ -277,7 +261,7 @@
 
 
 
-
+    <!--footer section-->
     <footer class="footer">
         <p>&copy; 2024 North Edge Fabricators Limited. All rights reserved.</p>
         <p>Designed by Deni</p>
@@ -291,7 +275,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Contact Us <b>+254 721394475</b></a>
         </div>
         <div class="newsletter">
             <h3>Subscribe to our Newsletter</h3>
@@ -303,16 +287,5 @@
 
     </footer>
 
-    <script>
-        
-        window.addEventListener("scroll", function () {
-            const logo = document.getElementById("logo");
-            if (window.scrollY > 50) {
-            logo.classList.add("hidden");
-            } else {
-            logo.classList.remove("hidden");
-            }
-        });
-    </script>
 </body>
 </html>
