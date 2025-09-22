@@ -22,9 +22,11 @@ document.addEventListener('click', (e) => {
 document.addEventListener("DOMContentLoaded", function () {
   const intro = document.querySelector(".intro-section");
   const images = [
-    "staticimages/weld.jpg",
-    "staticimages/metalcutting.jpg",
     "staticimages/metalbending.jpg",
+    "staticimages/metalcutting.jpg",
+    "staticimages/weld.jpg",
+
+    
   ];
 
   let i = 0;

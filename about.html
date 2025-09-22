@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+
+
+    <!--style sheets-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+
+
+    <!-- link to the JavaScript file -->
+    <script defer src="javascript/main.js"></script>
+    <script defer src="javascript/tabs.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=La+Belle+Aurore&family=Mynerve&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+        
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="staticimages/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="staticimages/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="staticimages/logo.png">
+
+    <script>
+        
+        window.addEventListener("scroll", function () {
+            const logo = document.getElementById("logo");
+            if (window.scrollY > 50) {
+            logo.classList.add("hidden");
+            } else {
+            logo.classList.remove("hidden");
+            }
+        });
+    </script>
+    
+</head>
+
+<body>
+    <header>
+        <img id="logo" src ="staticimages/logo.png" alt="Logo" class="logo">
+        <button id="navToggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>        
+        <nav id="sideNav" class="side-nav">
+            <a href="/home/deni/Music/Desktop/nefweb/index.html">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#services">OUR SERVICES</a>
+            <a href="#projects">OUR PROJECTS</a>
+            <a href="#contact">CONTACT US</a>
+            <b class="phone"> +254 721-394-475</b>
+            <b class="phone"> +254 723-853-275</b>
+        </nav>
+    </header>
+    <main>
+        <section class="about-intro-section">
+            <p>
+                North Edge Fabricators Limited is a trusted provider of high-quality metal fabrication and engineering solutions. 
+                Based at Kariobangi Light Industries, Nairobi, we are committed to precision, durability, and innovation in every project. 
+                Our expertise enables us to deliver customised solutions that support the growth and efficiency of businesses across multiple industries.
+            </p>
+            <div class="about-intro">
+                
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide reliable, innovative, and cost-effective fabrication solutions
+                        that help our clients achieve their project goals on time and to the
+                        highest standards.
+                    </p>
+
+                </div>
+                
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be a leading fabricator and supplier of durable and innovative engineering products in Kenya and
+                        beyond.
+                    </p>
+                    <h3>Our Values</h3>
+                    <ul class="values-list">
+                    <li><strong>Quality</strong> Commitment to excellence in every product and service.</li>
+                    <li><strong>Innovation</strong> Continuous improvement and adoption of modern fabrication technologies.</li>
+                    <li><strong>Integrity</strong> Transparent and ethical business practices.</li>
+                    <li><strong>Customer Focus</strong> Tailored solutions that meet unique client needs.</li>
+                    <li><strong>Sustainability</strong> Environmentally responsible and efficient operations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="our-team-section">
+            <h2> Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="staticimages/profile.png" alt="team's-image" >
+                    <h4>SAMUEL KIBUIKA</h4>
+                    <p>Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="staticimages/profile.png" alt="team's-image" >
+                    <h4>JONATHAN KAMAU</h4>
+                    <p>Director</p>
+                </div>
+                 <div class="team-member">
+                    <img src="staticimages/profile.png" alt="team's-image" >
+                    <h4>DENIS K GITHINJI</h4>
+                    <p>operations Manager</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+
+
+
+    <!--footer section-->
+    <footer class="footer">
+        <p>&copy; 2024 North Edge Fabricators Limited. All rights reserved.</p>
+        <p>Designed by Deni</p>
+        <div class="social-media">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us <b>+254 721394475</b></a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+</html>
