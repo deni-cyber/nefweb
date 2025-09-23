@@ -2,9 +2,34 @@
     background-color: none;
     margin-top: 50px;
 }
-.about-intro-section p{
-    max-width: 800px;
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 4px;
 }
+.first-section-text{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+.first-section h2{
+    text-align: left;
+}
+.first-section-image{
+    width: 100%;
+}
+.first-section-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+
+
 
 
 .about-intro{
@@ -12,27 +37,45 @@
     flex-direction: column;
     text-align: justify;
     max-width: 100%;
+    padding: 12px;
 }
+.about-intro h3{
+    color: tomato;
+}
+
+
+
+
+
 
 .our-team-section{
-    background-color: wheat;
+    background-color: lemonchiffon;
 }
-
+.our-team-section h2{
+    text-align: left;
+}
 .team-members{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 24px;
 }
 .team-member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
     max-width: 400px;
+    height: auto;
     padding: 12px;
     border-radius: 4px ;
-    box-shadow:0px 0px 1px 0px tomato;
+    background-color: white;
+    box-shadow:0px 0px 1px 0px rgba(0, 0, 0, 0.681);
 }
 .team-member img{
-    width :100%;
+    width :auto;
     height: 200px;
 }
 
@@ -42,5 +85,33 @@
 @media screen and (min-width: 768px) {
     .about-intro{
         max-width: 60%;
+    }
+    .first-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        background-color: lemonchiffon;
+        padding: 4%;
+        border-radius: 4px;
+    }
+    .first-section-text{
+        width: 60%;
+        padding: 24px;
+        border-radius: 4px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        font-size: 1.2em;
+    }
+    .first-section-image{
+        max-width: 400px;
+    }
+    .first-section-image img{
+        border-radius: 4px;
     }
 }

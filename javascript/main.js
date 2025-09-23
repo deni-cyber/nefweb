@@ -64,3 +64,20 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
   window.open(url, "_blank");
 });
+
+
+
+
+//animating buttons when in view port
+const btn = document.querySelector('.learn-more-btn');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+      observer.unobserve(entry.target); // run only once
+    }
+  });
+});
+
+observer.observe(btn);
