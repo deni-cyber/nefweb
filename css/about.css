@@ -10,6 +10,7 @@
     border-radius: 4px;
 }
 .first-section-text{
+    font-size: 1.2em;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -32,69 +33,165 @@
 
 
 
+
 .about-intro{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    max-width: 100%;
-    padding: 12px;
+    gap: 12px;
+    margin-top: 24px;
+    font-size: 1.2em;
 }
 .about-intro h3{
     color: tomato;
 }
-
-
-
-
-
-
-.our-team-section{
-    background-color: lemonchiffon;
-}
-.our-team-section h2{
+.mission{
+    max-width: 100%;
+    background-color: wheat;
+    border-radius: 4px 24px 4px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    flex-direction: column;
     text-align: left;
 }
-.team-members{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 24px;
+.about-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
-.team-member{
+
+
+
+
+
+.services-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-width: 300px;
-    max-width: 400px;
-    height: auto;
-    padding: 12px;
-    border-radius: 4px ;
+    justify-content: center;
+    padding-bottom: 20px;
     background-color: white;
-    box-shadow:0px 0px 1px 0px rgba(0, 0, 0, 0.681);
 }
-.team-member img{
-    width :auto;
-    height: 200px;
+.services-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: Black;
+    width: 100%;
+    text-align: center;
 }
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border: solid 2px tomato;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.2em;
+}
+.service:hover {
+    transform: translateY(-4px);
+}
+.service-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.service h3 {
+    font-size: 1.0em;
+    margin-bottom: 4px;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+}
+
+.services-section p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    color: #333;
+    max-width: 100%;
+    text-align: left;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
+.choose-us-section {
+    padding-bottom: 20px;
+    margin-top: 12px;
+    background-color: lemonchiffon;
+}
+.choose-us-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+.choose-us-section p {
+    font-size: 1.2em;   
+    line-height: 1.4;
+    color: #333;
+    max-width: 100%;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+.reasons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.reason{
+    border-left: solid 4px tomato;
+    max-width: 100%;
+    padding: 12px;
+    text-align: justify;
+    background-color: white;
+}
+
+
+
+
+
+
 
 /* ================================
    Tablet & Desktop View (≥768px)
 ================================= */
 @media screen and (min-width: 768px) {
-    .about-intro{
-        max-width: 60%;
+    .about-intro-section{
+        background-color: white;
+        margin-bottom: 12px;
     }
+    
     .first-section{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 24px;
-        background-color: lemonchiffon;
         padding: 4%;
         border-radius: 4px;
+        background-color: lemonchiffon;
     }
     .first-section-text{
         width: 60%;
@@ -114,4 +211,54 @@
     .first-section-image img{
         border-radius: 4px;
     }
+
+
+    .about-intro{
+        flex-direction: row;
+    }
+    .mission{
+        max-width: 30%;
+    }
+
+
+
+
+
+
+     
+
+
+
+
+    .services-section{
+        background-color: lemonchiffon;
+    }
+
+    /* Services in rows of 3 */
+    .services {
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .service {
+        width: 350px;
+        padding: 12px;
+    }
+
+
+
+    .choose-us-section {
+        gap: 40px;
+    }
+    .divider {
+        max-width: auto;
+    }
+    .reason{
+        background-color: white;
+        max-width: 200px;
+        min-height: 200px;
+    }
+
+
 }
