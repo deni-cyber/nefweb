@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>North Edge Fabricators Ltd-Projects</title>
+
+    <!--style sheets-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/projects.css">
+
 
     <!-- link to the JavaScript file -->
     <script defer src="javascript/main.js"></script>
@@ -25,42 +29,94 @@
     <link rel="icon" type="image/png" sizes="32x32" href="staticimages/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="staticimages/logo.png">
 
+    <script>
+        
+        window.addEventListener("scroll", function () {
+            const logo = document.getElementById("logo");
+            if (window.scrollY > 50) {
+            logo.classList.add("hidden");
+            } else {
+            logo.classList.remove("hidden");
+            }
+        });
+    </script>
     
 </head>
 
 <body>
     <header>
         <img id="logo" src ="staticimages/logo.png" alt="Logo" class="logo">
-        <button id="navToggle" class="menu-btn">☰</button>
+        <button id="navToggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>        
         <nav id="sideNav" class="side-nav">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT US</a>
-                <a href="#services">OUR SERVICES</a>
-                <a href="#projects">OUR PROJECTS</a>
-                <a href="#contact">CONTACT US</a>
+            <a href="/nefweb/index.html">HOME</a>
+            <a href="/nefweb/about.html#about">ABOUT US</a>
+            <a href="/nefweb/about.html#services">OUR SERVICES</a>
+            <a href="/nefweb/projects.html#projects">OUR PROJECTS</a>
+            <a href="/nefweb/index.html#contact">CONTACT US</a>
+            <b class="phone"> +254 721-394-475</b>
+            <b class="phone"> +254 723-853-275</b>
         </nav>
     </header>
     <main>
-        <section id="projects" class="projects">
-            <h2>Our Projects</h2>
-            <div class="project">
-                <img src="staticimages/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+        <section>
+   
+        <div class="projects-intro-section">
+            <div>
+                <h1>projects</h1>
             </div>
-            <div class="project">
-                <img src="staticimages/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
+            <div>
+                <h2 style="font-size: 2em; color: cyan;">We Offer the best services in the industry</h2>
             </div>
-            <div class="project">
-                <img src="staticimages/project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
+            <a href="/nefweb/index.html#contact" class="button">Reach Out</a>
+        </div>
+
+
+
+        <section id="projects" class="projects-gallery-section">
+            <h2>Recent Projects</h2>
+            <p>A list of some of our Completed projects</p>
+            <div class="projects-gallery">
+                <div class="project-card">
+                    <img src="projects/skipbin.jpeg" alt="project image" class="projects-image">
+                    <div class="project-card-overlay">
+                        <h3>Skip Bin Fabrication</h3>
+                        <p>
+                            fabrication, painting and delivery of a skip bin to Kajiado Town Municipality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="projects/highpole.jpg" alt="project image" class="projects-image">
+                    <div class="project-card-overlay">
+                        <h3>Flood-light pole</h3>
+                        <p>
+                            Fabrication and installation of a floodlight pole in Miles-46, Kajiado County.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="projects/highlightpole.jpg" alt="project image" class="projects-image">
+                    <div class="project-card-overlay">
+                        <h3>The Amaremba Flood-light Pole Fabrication & Installation</h3>
+                        <p>
+                            Amaremba, Kakamega county High street Light pole installation, under Gertran Solution ltd.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+   
 
+
+
+    <!--footer section-->
     <footer class="footer">
         <p>&copy; 2024 North Edge Fabricators Limited. All rights reserved.</p>
         <p>Designed by Deni</p>
@@ -74,7 +130,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Contact Us <b>+254 721394475</b></a>
         </div>
         <div class="newsletter">
             <h3>Subscribe to our Newsletter</h3>
@@ -86,15 +142,5 @@
 
     </footer>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            const logo = document.getElementById("logo");
-            if (window.scrollY > 50) {
-            logo.classList.add("hidden");
-            } else {
-            logo.classList.remove("hidden");
-            }
-        });
-    </script>
 </body>
 </html>
