@@ -13,7 +13,6 @@
 
     <!-- link to the JavaScript file -->
     <script defer src="javascript/main.js"></script>
-    <script defer src="javascript/tabs.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,39 +176,70 @@
 
             </div>
             
-        </section>        
+        </section>
+            <!-- why choose us -->
+        <section class="choose-us-section">
+            <h2>Why Choose Us</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <h3>Proven Expertise</h3>
+                    Years of experience in metal works, fabrication, and machinery supply.
+                    Skilled technicians and engineers with hands-on knowledge in the industry.
+                </div>
+                <div class="reason">
+                    <h3>Quality Assurance</h3>
+                    We use only high-grade materials to ensure durability and strength.
+                    Every product undergoes strict quality checks before delivery or installation.
+
+                </div>
+                <div class="reason">
+                    <h3>Competitive Pricing</h3>
+                    Our prices are fair and transparent.
+                    We provide cost-effective solutions without hidden charges.
+                </div>
+
+                <div class="reason">
+                    <h3>Innovation & Modern Technology</h3>
+                    We continuously improve our processes by adopting modern fabrication techniques.
+                </div>
+            </div>
+        </section>    
+
+        <!--
+            certifications section
+        -->
+        <section class="our-cert-section">
+            <h2>Our Certifications</h2>
+            <div class="cert-container">
+                <div class="cert">
+                    <img src="staticimages/badge.png">
+                    <div class="clickable-header">
+                        <h3>Certificate of incorporation</h3>
+                        <label>Open ></label>
+                    </div>
+                    <div class="modal">
+                        <button class="button closeModal">&times;</button>
+                        <iframe src="staticimages/compliance.pdf" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+
+                <div class="cert">
+                    <img src="staticimages/badge.png">
+                    <div class="clickable-header">
+                        <h3>Certificate of Compliance</h3>
+                        <label>Open ></label>
+                    </div>
+                    <div class="modal">
+                        <button class="button closeModal">&times;</button>
+                        <iframe src="staticimages/incorporation.pdf" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>   
+
     </main>
-
-
-
-    <!-- why choose us -->
-    <section class="choose-us-section">
-        <h2>Why Choose Us</h2>
-        <div class="reasons">
-            <div class="reason">
-                <h3>Proven Expertise</h3>
-                Years of experience in metal works, fabrication, and machinery supply.
-                Skilled technicians and engineers with hands-on knowledge in the industry.
-            </div>
-            <div class="reason">
-                <h3>Quality Assurance</h3>
-                We use only high-grade materials to ensure durability and strength.
-                Every product undergoes strict quality checks before delivery or installation.
-
-            </div>
-            <div class="reason">
-                <h3>Competitive Pricing</h3>
-                Our prices are fair and transparent.
-                We provide cost-effective solutions without hidden charges.
-            </div>
-
-            <div class="reason">
-                <h3>Innovation & Modern Technology</h3>
-                We continuously improve our processes by adopting modern fabrication techniques.
-            </div>
-        </div>
-    </section>
-
 
 
     <!--footer section-->
@@ -235,7 +265,32 @@
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-
     </footer>
+
+    <script>
+        // Get all certificates
+        const certs = document.querySelectorAll('.cert');
+
+        certs.forEach(cert => {
+            const openBtn = cert.querySelector('.clickable-header');
+            const modal = cert.querySelector('.modal');
+            const closeBtn = cert.querySelector('.closeModal');
+
+            openBtn.addEventListener('click', () => {
+                modal.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Close modal when clicking outside the content
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
