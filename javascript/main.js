@@ -18,6 +18,18 @@ document.addEventListener('click', (e) => {
 
 
 
+
+//hidding the logo in small scrins when the scroll starts
+window.addEventListener("scroll", function () {
+    const logo = document.getElementById("logo");
+    if (window.scrollY > 50) {
+    logo.classList.add("hidden");
+    } else {
+    logo.classList.remove("hidden");
+    }
+});
+
+
 // changing background
 document.addEventListener("DOMContentLoaded", function () {
   const intro = document.querySelector(".intro-section");
@@ -25,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "staticimages/metalbending.jpg",
     "staticimages/metalcutting.jpg",
     "staticimages/weld.jpg",
-
-    
   ];
 
   let i = 0;
@@ -42,11 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Change every 5 seconds
   setInterval(changeBackground, 5000);
 });
-
-
-
-
-
 
 //sending message via whatsapp
 document.getElementById("contactForm").addEventListener("submit", function(e) {
@@ -67,17 +72,46 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
 
 
+//animation script for the corousels
+document.querySelectorAll('.carousel').forEach(carousel => {
+const slides = carousel.querySelector('.slides');
+const images = carousel.querySelectorAll('.slides img');
+const prev = carousel.querySelector('.prev');
+const next = carousel.querySelector('.next');
+const dotsContainer = carousel.querySelector('.dots');
+let index = 0;
 
-//animating buttons when in view port
-const btn = document.querySelector('.learn-more-btn');
+// Create dots dynamically based on image count
+images.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate');
-      observer.unobserve(entry.target); // run only once
-    }
-  });
+    dot.addEventListener('click', () => showSlide(i));
 });
 
-observer.observe(btn);
+const dots = dotsContainer.querySelectorAll('.dot');
+
+function showSlide(i) {
+    if (i < 0) index = images.length - 1;
+    else if (i >= images.length) index = 0;
+    else index = i;
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+prev.addEventListener('click', () => showSlide(index - 1));
+next.addEventListener('click', () => showSlide(index + 1));
+
+// Auto-play with pause on hover
+let autoplay = setInterval(() => showSlide(index + 1), 4000);
+
+carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
+carousel.addEventListener('mouseleave', () => {
+    autoplay = setInterval(() => showSlide(index + 1), 4000);
+});
+});

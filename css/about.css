@@ -162,7 +162,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 12px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .reason{
@@ -171,8 +171,11 @@
     padding: 12px;
     text-align: justify;
     background-color: white;
+    min-height: 250px;
 }
-
+.reason-icon{
+    border: solid tomato 4px;
+}
 
 
 
@@ -192,7 +195,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    
 }
 
 .cert img{
@@ -339,26 +342,24 @@
     /* Services in rows of 3 */
     .services {
         justify-content: center;
-        gap: 30px;
+        gap: 12px;
     }
 
     .service {
-        width: 350px;
-        padding: 12px;
+        flex: 1 1 calc(33.333% - 12px); /* 3 per row, accounting for gap */
+        box-sizing: border-box;         /* ensures padding/borders don’t break layout */
     }
 
 
 
     .choose-us-section {
+        align-items: flex-start;
         gap: 40px;
-    }
-    .divider {
-        max-width: auto;
     }
     .reason{
         background-color: white;
-        max-width: 200px;
-        min-height: 200px;
+        flex: 1 1 calc(25% - 40px); /* 4 per row, accounting for gap */
+        box-sizing: border-box;         /* ensures padding/borders don’t break layout */
     }
 
 
@@ -369,7 +370,7 @@
         gap: 12px;
     }
     .cert{
-        flex: 1 1 calc(33.333% - 12px); /* 3 per row, accounting for gap */
+        flex: 1 1 calc(25% - 12px); /* 3 per row, accounting for gap */
         box-sizing: border-box;         /* ensures padding/borders don’t break layout */        border-radius: 20px 4px 20px 4px;
     }
 

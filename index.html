@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
 
-    <!-- link to the JavaScript file -->
-    <script defer src="javascript/main.js"></script>
-    <script defer src="javascript/tabs.js"></script>
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,19 +23,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="staticimages/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="staticimages/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="staticimages/logo.png">
-
-    <script>
-        
-        window.addEventListener("scroll", function () {
-            const logo = document.getElementById("logo");
-            if (window.scrollY > 50) {
-            logo.classList.add("hidden");
-            } else {
-            logo.classList.remove("hidden");
-            }
-        });
-    </script>
-    
 </head>
 
 <body>
@@ -55,8 +39,8 @@
             <a href="/nefweb/about.html#services">OUR SERVICES</a>
             <a href="/nefweb/projects.html#projects">OUR PROJECTS</a>
             <a href="/nefweb/index.html#contact">CONTACT US</a>
-            <b class="phone"> +254 721-394-475</b>
-            <b class="phone"> +254 723-853-275</b>
+            <b class="phone"><span><img src="staticimages/phoneicon.png" alt="phonicon" style="width: 20px; height: 20px;"></span> +254 721-394-475</b>
+            <b class="phone"><span><img src="staticimages/phoneicon.png" alt="phonicon" style="width: 20px; height: 20px;"></span> +254 723-853-275</b>
         </nav>
     </header>
     <main>
@@ -66,7 +50,7 @@
                 <h1>Experts in Fabrication & <br>
                     Engineering Solutions</h1>
                 <p>We Offer you Exceptional Services in every build.</p>
-                <a href="#contact" class="button">Get in Touch</a>
+                <a href="#contact" class="intro-btn">Get in Touch</a>
             </div>
         </section>
 
@@ -91,7 +75,7 @@
                             </p>
                         </div>
                         <div>
-                            <a class="button" href="/nefweb/about.html#services"> Our Services</a>
+                            <a class="ourservices-btn" href="/nefweb/about.html#services"> Our Services</a>
                         </div>
                     
                     </div>
@@ -110,24 +94,55 @@
             <h2>Our Recent Projects</h2>
 
             <div class="projects">
-                
                 <div class="project">
-                    <img src="projects/skipbin.jpeg" alt="Project 3" class="project-image">
+                    <div class="carousel">
+                        <div class="slides">
+                            <img src="projects/31b.jpg" alt="project image" class="project-image">
+                            <img src="projects/31a.jpg" alt="project image" class="project-image">
+                            <img src="projects/31.jpg" alt="project image" class="project-image">
+                            
+                        </div>
+                        <!-- Navigation buttons -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                        <!--Dots-->
+                        <div class="dots"></div>
+                    </div>
+
                     <h3>Skip Bin Fabrication</h3>
                     <p>A project commisioned by Kajiado Town Municipality</p>
                 </div>
                 <div class="project">
-                    <img src="projects/highlightpole.jpg" alt="Project 1" class="project-image">
+                    <div class="carousel">
+                        <div class="slides">
+                            <img src="projects/27a.jpg" alt="project image" class="project-image">
+                            <img src="projects/27b.jpg" alt="project image" class="project-image">
+                            <img src="projects/27c.jpg" alt="project image" class="project-image">
+                        </div>
+                        <!-- Navigation buttons -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                        <!--Dots-->
+                        <div class="dots"></div>
+                    </div>
+                    
                     <h3>Floodlight Pole Fabrication & installation</h3>
                     <p>Amaremba, Kakamega county High street Light pole installation, under Gertran Solution ltd.</p>
                 </div>
                 <div class="project">
-                    <img src="projects/highpole.jpg" alt="Project 2" class="project-image">
+                    <div class="carousel">
+                        <div class="slides">
+                            <img src="projects/highpole.jpg" alt="project image" class="project-image">
+                        </div>
+                        <!-- Navigation buttons -->
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                        <!--Dots-->
+                        <div class="dots"></div>
+                    </div>
                     <h3>Floodlight Pole Fabrication & installation</h3>
                     <p>Miles-46, Kajiado County Flood-light fabrication and installation.</p>
                 </div>
-                
-
             </div>
 
             <a href="/nefweb/projects.html#projects" class="view-all-btn">View More Projects ></a>
@@ -208,5 +223,7 @@
 
     </footer>
 
+    <!-- link to the JavaScript file -->
+    <script defer src="javascript/main.js"></script>
 </body>
 </html>
