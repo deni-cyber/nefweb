@@ -634,7 +634,7 @@ section{
     }
 
    .project {
-        flex: 1 1 calc(33.333% - 12px); /* 3 per row, accounting for gap */
+        flex: 1 1 calc(50% - 12px); /* 3 per row, accounting for gap */
         box-sizing: border-box;         /* ensures padding/borders don’t break layout */
     }
 
