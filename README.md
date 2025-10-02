@@ -1,6 +1,3 @@
-Great 🙌 Here’s the updated **README.md** with the license section linking directly to the `LICENSE` file.
-
-```markdown
 # Nefweb
 
 A simple static portfolio-style website built with **HTML**, **CSS**, and **JavaScript**.  
@@ -18,7 +15,6 @@ The site showcases projects, about information, and static assets.
 ---
 
 ## 📂 Project Structure
-```
 
 nefweb/
 │
@@ -31,7 +27,6 @@ nefweb/
 ├── staticimages/       # Static images (logos, banners, icons)
 └── projects/           # Project images / related assets
 
-````
 
 ---
 
@@ -43,22 +38,20 @@ nefweb/
 
 ### Running Locally
 1. Clone the repository:
-   ```bash
+   bash
    git clone https://github.com/deni-cyber/nefweb.git
-````
 
 2. Navigate into the project folder:
 
-   ```bash
+   bash
    cd nefweb
-   ```
+
 3. Open `index.html` in your browser **OR** use a local server:
 
-   ```bash
+   bash
    # Example using Python
    python3 -m http.server
    # Open http://localhost:8000 in your browser
-   ```
 
 ---
 
@@ -82,9 +75,5 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 * Improve accessibility with semantic HTML & ARIA roles
 * Add SEO meta tags & Open Graph tags
 
-```
-
 ---
 
-Would you like me to also add **badges** (for license, last commit, etc.) at the top of the README to make it look more professional?
-```
