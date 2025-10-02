@@ -4,6 +4,9 @@ A simple static portfolio-style website built with **HTML**, **CSS**, and **Java
 The site showcases projects, about information, and static assets.
 
 ---
+## 🌐 Live Demo
+Check out the live website here: [Nefweb GitHub Pages](https://deni-cyber.github.io/nefweb/)
+
 
 ## 🚀 Features
 - Multi-page layout: Home, About, Projects
