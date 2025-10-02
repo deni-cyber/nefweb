@@ -330,6 +330,7 @@
     }
 
 
+
     .about-intro{
         flex-direction: row;
     }
@@ -362,17 +363,16 @@
         background-position: center;
         background-size: cover;
     }
-    .choose-us-section h2 {
-        font-size: 2.5em;
-        font-weight: bolder;
+    .choose-container{
         background-color: wheat;
-        width: 100%;
-        margin-bottom: 0px;
+        padding: 2%;
+        border-radius: 4px;
     }
     .reason{
         background-color: white;
         flex: 1 1 calc(25% - 40px); /* 4 per row, accounting for gap */
         box-sizing: border-box;         /* ensures padding/borders don’t break layout */
+        border-radius: 0 0 24px 0;
     }
 
 
