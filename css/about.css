@@ -298,6 +298,7 @@
         background-image: url('../staticimages/pexels-davegarcia-32118894.jpg');
         background-position: center;
         background-size: cover;
+        padding: 12px;
     }
     
     .first-section{
@@ -359,12 +360,10 @@
     .choose-us-section {
         align-items: flex-start;
         gap: 40px;
-        background-image: url('../staticimages/pexels-cmrcn-29224587.jpg');
-        background-position: center;
-        background-size: cover;
+        
     }
     .choose-container{
-        background-color: wheat;
+        background-color: none;
         padding: 2%;
         border-radius: 4px;
     }
