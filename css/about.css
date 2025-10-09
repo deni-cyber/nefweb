@@ -47,7 +47,7 @@
 }
 .mission{
     max-width: 100%;
-    background-color: wheat;
+    background-color: blanchedalmond;
     border-radius: 4px 24px 4px 0px;
     display: flex;
     justify-content: flex-start;
@@ -138,7 +138,7 @@
 .choose-us-section {
     padding-bottom: 20px;
     margin-top: 12px;
-    background-color: wheat;
+    background-color: blanchedalmond;
 }
 .choose-us-section h2 {
     font-size: 1.5em;
@@ -188,7 +188,7 @@
     gap: 24px;
 }
 .cert{
-    background-color: wheat;
+    background-color: blanchedalmond;
     padding: 12px;
     border-radius: 24px 4px 24px 4px;
     display: flex;
@@ -309,7 +309,7 @@
         gap: 24px;
         padding: 4%;
         border-radius: 4px;
-        background-color: wheat;
+        background-color: blanchedalmond;
     }
     .first-section-text{
         width: 60%;
