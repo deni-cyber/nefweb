@@ -228,14 +228,14 @@ section{
 .view-more-button-container{
     background-color: #333;
     height: 300px;
-    width: 100%;
     background-image: url(../staticimages/bg.jpg);
     background-position: fixed;
     background-size: cover;   
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 24px;
+    width: 100%;
+    
 }
 .ourservices-btn{
     background-color: tomato;
