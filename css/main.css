@@ -503,6 +503,27 @@ section{
 
 
 
+.partners-section{
+    height: 40vh;
+    padding: 0px;
+    margin: 0px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.partners img{
+    width: 80px;
+    height: auto;
+    margin: 20px;
+}
 
 
 
