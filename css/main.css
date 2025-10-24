@@ -509,16 +509,16 @@ section{
     margin: 0px;
     justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
+    margin: 0px;
 }
 .partners{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: blanchedalmond;
 }
 .partners img{
     width: 100px;
