@@ -37,10 +37,14 @@
     gap: 24px;
 }
 .project-card{
+    width: 100%;
     background-color: blanchedalmond;
     padding: 4px;
-
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
 }
 .projects-image{
     max-width: 100%;
@@ -63,13 +67,13 @@
 
    .projects-gallery{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 24px;
-        column-gap: 48px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 12px;
+        column-gap: 12px;
 
     }
     .project-card{
-        width: 100%;
+        width: 90%;
         padding: 12px;
         border-radius: 24px 0px 24px 0px;
         background-color: blanchedalmond;
