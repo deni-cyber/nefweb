@@ -504,7 +504,8 @@ section{
 
 
 .partners-section{
-    height: 40vh;
+    height: fit-content;
+    text-align: center;
     padding: 0px;
     margin: 0px;
     justify-content: center;
