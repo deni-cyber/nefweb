@@ -115,3 +115,20 @@ carousel.addEventListener('mouseleave', () => {
     autoplay = setInterval(() => showSlide(index + 1), 4000);
 });
 });
+
+
+
+const text = "Experts in Fabrication & Engineering Solutions";
+const element = document.getElementById("text");
+let index = 0;
+
+function type() {
+  if (index < text.length) {
+    element.textContent += text.charAt(index);
+    index++;
+    setTimeout(type, 50);
+  }
+}
+
+type();
+
